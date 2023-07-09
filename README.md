@@ -1,3 +1,3 @@
 # Multi-tier Web Application Automated Provisioning
 
-![diagram-picture](diagram.png)
+![diagram-picture](./picture/diagram.png)

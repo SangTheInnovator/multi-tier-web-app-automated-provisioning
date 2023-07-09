@@ -22,17 +22,28 @@ Vagrant.configure("2") do |config|
       app01.vm.provision "shell", path: "tomcat.sh"  
       app01.vm.provider "virtualbox" do |vb|
        vb.memory = "800"
-     end
+      end
     end
 
-    # Memcache VM
+    # RabbitMQ VM
+    config.vm.define "rmq01" do |rmq01|
+      rmq01.vm.box = "eurolinux-vagrant/centos-stream-9"
+    rmq01.vm.hostname = "rmq01"
+      rmq01.vm.network "private_network", ip: "192.168.56.13"
+      rmq01.vm.provider "virtualbox" do |vb|
+       vb.memory = "600"
+      end
+      rmq01.vm.provision "shell", path: "rabbitmq.sh"  
+    end
+
+    # Memcached VM
     config.vm.define "mc01" do |mc01|
       mc01.vm.box = "eurolinux-vagrant/centos-stream-9"
       mc01.vm.hostname = "mc01"
       mc01.vm.network "private_network", ip: "192.168.56.14"
       mc01.vm.provider "virtualbox" do |vb|
        vb.memory = "600"
-     end
+      end
       mc01.vm.provision "shell", path: "memcache.sh"  
     end
     
@@ -43,21 +54,8 @@ Vagrant.configure("2") do |config|
       db01.vm.network "private_network", ip: "192.168.56.15"
       db01.vm.provider "virtualbox" do |vb|
        vb.memory = "600"
-     end
+      end
       db01.vm.provision "shell", path: "mysql.sh"  
-  
     end
-    
-    
-    # RabbitMQ VM
-    config.vm.define "rmq01" do |rmq01|
-      rmq01.vm.box = "eurolinux-vagrant/centos-stream-9"
-    rmq01.vm.hostname = "rmq01"
-      rmq01.vm.network "private_network", ip: "192.168.56.16"
-      rmq01.vm.provider "virtualbox" do |vb|
-       vb.memory = "600"
-     end
-      rmq01.vm.provision "shell", path: "rabbitmq.sh"  
-    end
- 
+
 end

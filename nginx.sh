@@ -25,7 +25,7 @@ rm -rf /etc/nginx/sites-enabled/default
 # Create link to activate website
 ln -s /etc/nginx/sites-available/profile_app /etc/nginx/sites-enabled/profile_app
 
-# Start nginx service and firewall
+# Starting nginx service
 systemctl start nginx
 systemctl enable nginx
 systemctl restart nginx

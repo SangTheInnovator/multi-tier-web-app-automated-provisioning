@@ -26,6 +26,5 @@
 11. MySQL:
    - SQL Database
 
-## 
 
 

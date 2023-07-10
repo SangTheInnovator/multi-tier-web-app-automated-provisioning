@@ -25,6 +25,8 @@
    - Index/Search service
 6. MySQL:
    - SQL Database
+  
+## Setup and Running locally
 
 
 

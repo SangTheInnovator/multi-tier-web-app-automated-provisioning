@@ -23,7 +23,7 @@
    - Database Caching
 9. ElasticSearch:
    - Index/Search service
-11. MySQL:
+10. MySQL:
    - SQL Database
 
 

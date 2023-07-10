@@ -15,15 +15,15 @@
 
 1. Nginx:
    - Web Service
-3. Tomcat Apache:
+2. Tomcat Apache:
    - Application Service
-5. RabbitMQ:
+3. RabbitMQ:
    - Message Broker
-7. Memcached:
+4. Memcached:
    - Database Caching
-9. ElasticSearch:
+5. ElasticSearch:
    - Index/Search service
-10. MySQL:
+6. MySQL:
    - SQL Database
 
 

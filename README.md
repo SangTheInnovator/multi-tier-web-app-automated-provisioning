@@ -2,8 +2,7 @@
 
 ![diagram-picture](./picture/diagram.png)
 
-In this project, we will set up a multi-tier web application stack and it will run locally by using automated provisioning. 
-
+<br>
 
 ## Pre-req
 

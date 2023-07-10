@@ -6,10 +6,10 @@
 
 ## Pre-req
 
-1. [Oracle VM Virtualbox](https://www.virtualbox.org/)
-2. [Vagrant](https://www.vagrantup.com/)
-3. [Vagrant plugins](https://github.com/devopsgroup-io/vagrant-hostmanager) - vagrant plugin install vagrant-host manager
-4. [Git bash](https://git-scm.com/downloads) 
+1. [Oracle VM Virtualbox](https://www.virtualbox.org/) - Allows you to create and run multiple virtual machines (VMs) on a single physical computer
+2. [Vagrant](https://www.vagrantup.com/) -  Provides an easy way to set up and configure reproducible virtual machines or containers for development purposes.
+3. [Vagrant plugins](https://github.com/devopsgroup-io/vagrant-hostmanager) - Vagrant-hostmanager is a Vagrant plugin that manages the host's file on guest machines (and optionally the host).
+4. [Git bash](https://git-scm.com/downloads) -  Combines the power of Git, a widely-used version control system, with the command-line interface of Bash, a popular shell found in Unix-like operating systems.
 
 ## Provisioning services
 
@@ -24,5 +24,8 @@
 9. ElasticSearch:
    - Index/Search service
 11. MySQL:
-    - SQL Database
+   - SQL Database
+
+## 
+
 

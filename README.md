@@ -27,7 +27,7 @@
    - SQL Database
   
 ## Setup and Running locally
-Firstly, we need to configure for the VMs by using Vagrantfile
+Firstly, we need to configure the VMs by using Vagrantfile
 
 **Vagrantfile**
 ```
@@ -92,6 +92,11 @@ Vagrant.configure("2") do |config|
     end
 
 end
+```
+
+Bring up VMs by using command:
+```
+$ vagrant up
 ```
 
 
